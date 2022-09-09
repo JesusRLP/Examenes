@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/skill.css">
+
+    <link rel="icon" type="image/jpg" href="images/owl.png">
+    
+    <title>NLP Abogada</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav fixed-top">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Brand</a> -->
+          <a href="#"><img src="images/owl.png" style="height: 20px;"></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" data-bs-toggle="dropdown">
+                            Acerca de
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <!-- <li>
+                                <a class="dropdown-item text" href="./html/testimonios.html">Testimonios</a>
+                            </li> -->
+                            <li>
+                                <a class="dropdown-item text" href="./html/aptitudes.html">Aptitudes</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-outline button" id="txt" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">Contacto</button>
+        </div>
+    </nav>
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content modalcontac">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> <img src="../images/owl.png"> Contácteme</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>+591 78550244</p>
+                    <p>Of. Calle de los Olivos Nº 780</p>
+                    <p>"Cuando el mundo está sobre tus hombros, yo te cubro la espalda"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div id="mySlide" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carousel-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="mesage1">Lista y preparada para oponerme por ti</h1>
+                    <p>Protegiendo todo lo que has construido</p>
+                    <a class="btn animated" href="./html/cita.html">Agende una cita</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel-2.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="mesage2">¿No sabe a quien llamar? Contácteme</h1>
+                    <p>Yo lucharé por tu justicia</p>
+                    <a class="btn animated" href="./html/cita.html">Agende una cita</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/carousel.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="mesage3">Protegiendo Tus Derechos</h1>
+                    <p>Tu Libertad, Tu Futuro</p>
+                    <a class="btn animated" href="./html/cita.html">Agende una cita</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mySlide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mySlide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <hr>
+    <div class="horizontal-pad vertical-pad">
+        <section class="perfil">
+            <div class="info-perfil">
+                <h1 class="titulo-perfil">Hola soy, <br /> Nataly Andrea <br /> Loredo Pereira</h1>
+                <p class="detalle-perfil">
+                    Abogada de la Universidad Mayor de San Simón, especialista en Derecho Penal de la misma Universidad.
+                </p>
+            </div>
+            <span class="img-perfil">
+                <img class="perfil-img" src="./images/testimonial-4.jpg">
+            </span>
+        </section>
+    </div>
+</body>
+</html>

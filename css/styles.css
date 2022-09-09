@@ -1,0 +1,131 @@
+body{
+    background-color: #aa9166;
+}
+
+.nav{
+    background-color: black;
+}
+
+/*opciones de opacidad*/
+.carousel-caption{
+    position: absolute;
+    background-color:  rgba(0, 0, 0, 0.5);
+}
+
+/*color de texto*/
+.mesage1{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.mesage2{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.mesage3{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+/*boton en el carrusel*/
+#mySlide .carousel-caption .btn{
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #aa9166;
+    background: #121518;
+    border: 2px solid #aa9166;
+    border-radius: 0;
+    transition: .3s;
+}
+
+
+
+.btn-close{
+    background-color: #aa9166;
+}
+
+/* .button:active{
+    background-color:#ff9752;
+} */
+
+.text{
+    color: white;
+}
+
+.text:hover{
+    background-color: #aa9166;
+    color: aliceblue;
+}
+
+.button{
+    border-color: #aa9166;
+    color: white;
+}
+
+.button:focus{
+    border-color: #aa9166;
+    color: aliceblue;
+}
+
+.button:hover{
+    background-color: #aa9166;
+    color: aliceblue;
+}
+
+.menu {
+    background-color: black;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.horizontal-pad{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-pad{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media(min-width= 950px){
+    .horizontal-pad{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .vertical-pad{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+form{
+    padding-left: 35%;
+}
+
+.form-control{
+    
+    width: 50%;
+}
+
+.mb-3{
+    opacity: 65%;
+}
