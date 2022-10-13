@@ -1,0 +1,50 @@
+<p>login works!</p>
+<article class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card bg-light rounded-3 mt-5">
+            <div class="card-body">
+                <h5 class="card-title fs-2 text-center mb-4 mt-2">Iniciar Sesión</h5>
+
+                <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+                    <div>
+                        <div class="form-group input-group mb-2">
+                            <span class="input-group-text"> <i class="fa fa-user fa-fw"></i> </span>
+                            <input type="email" id="inputEmail" class="form-control" style="height: 40px;" placeholder="E-Mail"  formControlName="email" required>
+                        </div>
+
+                        <div *ngIf="loginFormGet('email')?.errors && loginFormGet('email')?.touched" class="mb-4 text-danger">
+                            <div *ngIf="loginFormGet('email')?.errors?.required">El campo E-Mail es obligatorio.</div>
+                            <div *ngIf="loginFormGet('email')?.errors?.pattern">Ingresa un E-Mail válido.</div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-group input-group mb-2">
+                            <span class="input-group-text"> <i class="fa fa-lock fa-fw"></i> </span>
+                            <input type="password" id="inputPassword" class="form-control" style="height: 40px;" placeholder="Contraseña" formControlName="password" required>
+                        </div>
+
+                        <div *ngIf="loginFormGet('password')?.errors && loginFormGet('password')?.touched" class="mb-4 text-danger">
+                            <div *ngIf="loginFormGet('password')?.errors?.required">El campo Contraseña es obligatorio.</div>
+                            <div *ngIf="loginFormGet('password')?.errors?.minlength">La contraseña debe ser de al menos 6 caracteres.</div>
+                        </div>
+                    </div>
+
+                    <hr class="my-5">
+
+                    <div class="text-center mb-2">
+                        <button class="btn btn-primary btn-block" type="submit" [disabled]="loginForm.invalid">Iniciar Sesión</button>
+                    </div>
+
+                    <p class="text-center mt-4">¿No tenés una cuenta?
+                        <a routerLink="/registrarse">¡Registrate!</a>
+                    </p>
+
+                    <p class="text-center">
+                        <a routerLink="/restablecer-contraseña">¿Olvidaste tu contraseña?</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</article>
