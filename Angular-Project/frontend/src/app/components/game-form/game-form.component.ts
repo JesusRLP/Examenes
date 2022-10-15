@@ -1,6 +1,7 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { Game } from '../../models/Game';
 import { ActivatedRoute,Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { GamesService } from '../../services/games.service';
 
@@ -10,7 +11,7 @@ import { GamesService } from '../../services/games.service';
   styleUrls: ['./game-form.component.css']
 })
 export class GameFormComponent implements OnInit {
-
+  
   @HostBinding('class') classes = 'row';
 
     game: Game = {

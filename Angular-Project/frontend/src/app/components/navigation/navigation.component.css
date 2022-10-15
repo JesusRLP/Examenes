@@ -1,4 +1,23 @@
 a{
     color: rgb(25, 187, 165);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style: groove;
+}
+
+a:hover{
+    background-color: #52ffa9;
+    color: black;
+}
+
+a:focus{
+    color: aliceblue;
+}
+
+a:active{
+    background-color: #52ffa9;
+}
+
+#press:enabled {
+    background-color: #52ffa9;
+    color: black;
 }

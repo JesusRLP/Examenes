@@ -10,13 +10,17 @@ import { GameFormComponent } from './components/game-form/game-form.component';
 import { GameListComponent } from './components/game-list/game-list.component';
 
 import { GamesService } from './services/games.service';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     GameFormComponent,
-    GameListComponent
+    GameListComponent,
+    NotFoundComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

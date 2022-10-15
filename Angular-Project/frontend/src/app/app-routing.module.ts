@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { GameListComponent } from './components/game-list/game-list.component';
 import { GameFormComponent } from './components/game-form/game-form.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'games/edit/:id',
     component: GameFormComponent
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
 ];
 

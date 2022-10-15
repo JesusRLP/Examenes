@@ -14,9 +14,11 @@
                     <input type="url" name="image" [(ngModel)]="game.image" placeholder="Image" class="form-control">
                 </div>
                 <br>
-                <button  type="button" class="btn btn-success" (click)="edit ? updateGame() : saveNewGame()">
-                    Save
-                </button>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button  type="button" class="btn btn-outline-success btn-lg" (click)="edit ? updateGame() : saveNewGame()">
+                        Save
+                    </button>
+                </div>
             </form>
         </div>
     </div>
